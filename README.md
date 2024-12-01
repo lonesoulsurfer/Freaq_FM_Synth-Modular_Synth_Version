@@ -1,9 +1,8 @@
 # Freaq_FM_Synth-Modular_Synth_Version
 
-Youtube Vid
-https://www.youtube.com/watch?v=fAgmykZD0DI&source_ve_path=Mjg2NjY
-
  The awesome Freaq FM Synth by MeeBleeps - designed for Eurorack Synths
+
+Youtube Vid - https://www.youtube.com/watch?v=fAgmykZD0DI&source_ve_path=Mjg2NjY****
 
 First and foremost - I need to do a huge shoutout to MeeBleeps who designed this amazing synth. 
 
