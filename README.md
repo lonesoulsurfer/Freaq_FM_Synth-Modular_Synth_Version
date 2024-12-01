@@ -1,5 +1,5 @@
-![image](https://github.com/user-attachments/assets/0f365cef-3fff-4e9e-9f6b-b830ca37858e)
 ![image](https://github.com/user-attachments/assets/03b1d349-1688-4cc1-b6a4-e923bcde2c75)
+
 # Freaq_FM_Synth-Modular_Synth_Version
 
  The awesome Freaq FM Synth by MeeBleeps - designed for Eurorack Synths
