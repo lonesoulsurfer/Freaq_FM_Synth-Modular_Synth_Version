@@ -6,23 +6,23 @@
 
 Youtube Vid - https://www.youtube.com/watch?v=fAgmykZD0DI&source_ve_path=Mjg2NjY
 
-First and foremost - I need to do a huge shoutout to MeeBleeps who designed this amazing synth. 
+First and foremost - I need to do a huge shoutout to MeeBleeps who designed this amazing synth! - https://github.com/Meebleeps/MeeBleeps-Freaq-FM-Synth
 
-I've designed the PCB and front panel to suit a Eurorack  so if you are into modular synths then this synth would fit perfectly into your rack! It can be run from 12V power supply and also has a power connector used on on Euroracks.
+My contribution has been the design of a PCB and front panel to suit a Eurorack to suit modular synth builds.  It can be run from 12V power supply via a power connector used on on Euroracks or a 9V power supply via a JST connector.
 
 It also can be used as a standalone synth and hand on heart, holds up to most mini synths you can buy.
 
-The main goal with building this module is to create a modular synth. I wanted to keep everything as simple as possble with each module built on the following aims:
+The main goal with building this module is to create my own 'simple to build' modular synth. I wanted to keep everything as easy as possble with each module built with the following aims:
 
  - Can be powered by 9V (and 12V)
  - Easy to build with minimum components
- - Use Arduino to keep it simple (plus it helps to keep the components down!
- - Can fit into any modular synth Eurorck (include the ability to power the module via normal module power sources
+ - Use Arduino to keep it simple (plus it helps to keep the components down and everything in tune)
+ - Can fit into any modular synth Eurorck (include the ability to power the module via normal module power sources)
  - Has to sound great!
 
-Hang-on I haven't even talked about what the Freq can do!
 
-The Freaq features dual independent 2-operator FM voices paired with a 2-track generative sequencer. You can stack the voices so they are in unison or have them in different polymeric step-counts. This allows you to have one voice play bass and the other lead.
+The Freaq FM Synth features dual independent 2-operator FM voices paired with a 2-track generative sequencer. You can stack the voices so they are in unison or have them in different polymeric step-counts. This allows you to have one voice play bass and the other lead.
 
 This is one funky little machine! There are a tonne of controls and waveforms along with attack/delay envelope and LFO per voice.
 
+Full instructions can be found in the Github repository
