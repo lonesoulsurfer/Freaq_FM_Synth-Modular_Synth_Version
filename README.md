@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/03b1d349-1688-4cc1-b6a4-e923bcde2c75)
+![image](https://github.com/user-attachments/assets/03b1d349-1688-4cc1-b6a4-e923bcde2c75)  ![image](https://github.com/user-attachments/assets/3e0c1589-e306-48ab-90eb-a796ce004b11)
 
 # Freaq_FM_Synth-Modular_Synth_Version
 
