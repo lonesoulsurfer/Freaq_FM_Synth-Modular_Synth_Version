@@ -20,6 +20,8 @@ The main goal with building this module is to create my own 'simple to build' mo
  - Can fit into any modular synth Eurorck (include the ability to power the module via normal module power sources)
  - Has to sound great!
 
+I've created a step by step guide on my Instructables page which you can find below.  This goes through how to upload the sketch using the correct version of Mozzie (1.1.2).  
+https://www.instructables.com/Freaq-FM-Synth/
 
 The Freaq FM Synth features dual independent 2-operator FM voices paired with a 2-track generative sequencer. You can stack the voices so they are in unison or have them in different polymeric step-counts. This allows you to have one voice play bass and the other lead.
 
