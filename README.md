@@ -28,3 +28,5 @@ The Freaq FM Synth features dual independent 2-operator FM voices paired with a 
 This is one funky little machine! There are a tonne of controls and waveforms along with attack/delay envelope and LFO per voice.
 
 Full instructions can be found in the Github repository
+
+![image](https://github.com/user-attachments/assets/93086e67-26f7-48e4-9f16-a8c60a78b05c)
