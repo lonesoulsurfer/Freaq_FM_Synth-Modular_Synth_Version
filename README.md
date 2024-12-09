@@ -29,4 +29,5 @@ This is one funky little machine! There are a tonne of controls and waveforms al
 
 Full instructions can be found in the Github repository
 
-![image](https://github.com/user-attachments/assets/93086e67-26f7-48e4-9f16-a8c60a78b05c)
+![image](https://github.com/user-attachments/assets/2b71c2c9-46d3-4fc6-9805-e5f03454d055)
+
