@@ -31,3 +31,4 @@ Full instructions can be found in the Github repository
 
 ![image](https://github.com/user-attachments/assets/2b71c2c9-46d3-4fc6-9805-e5f03454d055)
 
+NOTE - the default start-up on the Freaq has mutation and density very low which means you might only hear a couple bleeps and boops and not much else.  To get the synth going just turn the mutation knob fully left then fully right.  Then hold down the FUNC button and do the same thing again.  This will reset the mutation & density and you'll be good to go.
