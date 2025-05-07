@@ -19387,6 +19387,11 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="24.638" y1="55.88" x2="24.13" y2="55.88" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="-"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="20.32" y1="71.12" x2="20.32" y2="71.628" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>

@@ -4436,6 +4436,7 @@ design rules under a new name.</description>
 <contactref element="PWR" pad="7"/>
 <contactref element="PWR" pad="5"/>
 <contactref element="PWR" pad="8"/>
+<contactref element="C5" pad="-"/>
 </signal>
 <signal name="+5V">
 <contactref element="MUTATION" pad="3"/>
