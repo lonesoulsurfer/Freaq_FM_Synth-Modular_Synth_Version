@@ -55,5 +55,8 @@ flip the unit upside down and slip a piece of thin wire between the jack and cir
 ![IMG_7263](https://github.com/user-attachments/assets/e84fcee1-220e-4dac-bbde-0153e6d9114b)
 1. Still following the above procedure, install the potentiometers.
 
+## Case
+[This case](https://www.thingiverse.com/thing:6944323) works great! M3 nuts fit into the channels perfectly. I bolted the rest together with M2 nuts and bolts because that's what I had but I would expect M2.5 or M3 to work as well.
+
 ## Final Thoughts
 This synth is a blast to play with and I highly recommend it! And remember if you don't want to assemble it yourself you can always [buy an updated preassembled version](https://wireheadinstruments.com/freaq-fm) and support the inventor.
