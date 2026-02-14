@@ -5,6 +5,8 @@
 
 UPDATE: I have updated the original Freq Code so it now works on the current Mozzi Library.  You can find this updated code in the 'Freaq_Updated_Code' file.  I don't believe that there is any difference in sound quality and it is exactkly the same as the original which I have also included.  Both files can be found in the 'Frea_IDE_Code' folder
 
+
+
  The awesome Freaq FM Synth by MeeBleeps - designed for Eurorack Synths
 
 Youtube Vid - https://www.youtube.com/watch?v=fAgmykZD0DI&source_ve_path=Mjg2NjY
