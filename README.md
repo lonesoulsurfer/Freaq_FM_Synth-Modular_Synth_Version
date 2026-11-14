@@ -1,39 +1,114 @@
-![image](https://github.com/user-attachments/assets/d43b7279-5da6-433b-8786-0992f0a1a54e)
+# Freaq: FM synth for Eurorack
 
-# Freaq_FM_Synth-Modular_Synth_Version
+Freaq is an FM synth with a generative sequencer. It uses an Arduino Nano. The synth design and the code are by [Meebleeps](https://github.com/Meebleeps/MeeBleeps-Freaq-FM-Synth). I designed a PCB and a front panel, so that it fits in a Eurorack case. You can also use it as a standalone synth.
 
+![Freaq](https://github.com/user-attachments/assets/d43b7279-5da6-433b-8786-0992f0a1a54e)
 
-UPDATE: I have updated the original Freq Code so it now works on the current Mozzi Library.  You can find this updated code in the 'Freaq_Updated_Code' file.  I don't believe that there is any difference in sound quality and it is exactkly the same as the original which I have also included.  Both files can be found in the 'Frea_IDE_Code' folder
+## Build guide and video
 
+- Step-by-step build guide on Instructables: [Freaq FM Synth](https://www.instructables.com/Freaq-FM-Synth/)
+- Video on YouTube: [Freaq](https://www.youtube.com/watch?v=fAgmykZD0DI)
 
+## Features
 
- The awesome Freaq FM Synth by MeeBleeps - designed for Eurorack Synths
+- Two independent FM voices, each with 2 operators
+- A generative sequencer with 2 tracks. The tracks can play in unison, or with different step counts (polymetric). For example, one voice can play bass and the other voice can play lead.
+- Many waveforms, an attack and decay envelope, and an LFO for each voice
+- Power: 12 V from a Eurorack power connector, or 9 V through a JST connector
 
-Youtube Vid - https://www.youtube.com/watch?v=fAgmykZD0DI&source_ve_path=Mjg2NjY
+## What you need
 
-First and foremost - I need to do a huge shoutout to MeeBleeps who designed this amazing synth! - https://github.com/Meebleeps/MeeBleeps-Freaq-FM-Synth
+### Hardware
 
-My contribution has been the design of a PCB and front panel to suit a Eurorack to suit modular synth builds.  It can be run from 12V power supply via a power connector used on on Euroracks or a 9V power supply via a JST connector.
+- All parts are in the [parts list](Parts%20List.pdf).
+- The schematic is [Schematic.png](Schematic.png).
+- The Gerber files for the PCB and the front panel are in [Gerber Files](Gerber%20Files/). You can send them to a PCB maker.
 
-It also can be used as a standalone synth and hand on heart, holds up to most mini synths you can buy.
+### Software
 
-The main goal with building this module is to create my own 'simple to build' modular synth. I wanted to keep everything as easy as possble with each module built with the following aims:
+- Arduino IDE
+- The **Mozzi** library. The version that you need depends on the sketch. See the next section.
 
- - Can be powered by 9V (and 12V)
- - Easy to build with minimum components
- - Use Arduino to keep it simple (plus it helps to keep the components down and everything in tune)
- - Can fit into any modular synth Eurorck (include the ability to power the module via normal module power sources)
- - Has to sound great!
+## Select the sketch
 
-I've created a step by step guide on my Instructables page which you can find below.  This goes through how to upload the sketch using the correct version of Mozzie (1.1.2).  
-https://www.instructables.com/Freaq-FM-Synth/
+There are two sketches in `Freaq_IDE_Code/`. They make the same sounds.
 
-The Freaq FM Synth features dual independent 2-operator FM voices paired with a 2-track generative sequencer. You can stack the voices so they are in unison or have them in different polymeric step-counts. This allows you to have one voice play bass and the other lead.
+| Sketch | Mozzi version | Use it when |
+|--------|---------------|-------------|
+| `Freaq_Updated_Mozzi` | Mozzi 2 (the current version) | **Recommended.** Use this sketch. |
+| `Freaq_Original_Code` | Mozzi 1.1.2 (old version) | Only if you already use Mozzi 1.1.2 |
 
-This is one funky little machine! There are a tonne of controls and waveforms along with attack/delay envelope and LFO per voice.
+## Upload the firmware
 
-Full instructions can be found in the Github repository
+1. Download this repository. Click **Code → Download ZIP**, then extract the ZIP file.
+2. In the Arduino IDE, open the **Library Manager**.
+3. Search for **Mozzi** and install the newest version.
+4. Open `Freaq_IDE_Code/Freaq_Updated_Mozzi/Freaq_Updated_Mozzi.ino`.
+5. Connect the Arduino Nano to your computer with a USB cable.
+6. In the **Tools** menu, set these values:
+   - **Board:** Arduino Nano
+   - **Processor:** ATmega328P
+   - **Port:** the COM port of your Nano
+7. Click **Upload**.
+8. Wait for the message **Done uploading**.
 
-![image](https://github.com/user-attachments/assets/2b71c2c9-46d3-4fc6-9805-e5f03454d055)
+> **Note:** If the upload fails, set **Processor** to **ATmega328P (Old Bootloader)**, then try again. Many clone Nano boards need this setting.
 
-NOTE - the default start-up on the Freaq has mutation and density very low which means you might only hear a couple bleeps and boops and not much else.  To get the synth going just turn the mutation knob fully left then fully right.  Then hold down the FUNC button and do the same thing again.  This will reset the mutation & density and you'll be good to go.
+> **Note:** To use `Freaq_Original_Code`, install Mozzi version **1.1.2** in step 3. In the Library Manager, select **1.1.2** in the version list, then click **Install**.
+
+## Start-up tip
+
+When Freaq starts, the mutation and density settings are very low. You may hear only a few notes. To start the sequencer:
+
+1. Turn the **mutation** knob fully to the left, then fully to the right.
+2. Hold the **FUNC** button.
+3. While you hold **FUNC**, turn the **mutation** knob fully to the left, then fully to the right.
+
+## How to play
+
+The buttons and knobs are described in the [Meebleeps Freaq README](https://github.com/Meebleeps/MeeBleeps-Freaq-FM-Synth#user-guide).
+
+## Files in this repository
+
+| Folder or file | Contents |
+|----------------|----------|
+| `Freaq_IDE_Code/` | Firmware: the updated sketch and the original sketch |
+| `Eagle Files/` | Eagle files for the PCB |
+| `KiCad - Front Panel/` | KiCad files for the front panel |
+| `Front Panel - Inkscape.svg`, `Front Panel.png` | Front panel artwork |
+| `Gerber Files/` | Gerber files for the PCB and the front panel, ready to order |
+| `Parts List.pdf` | Parts list |
+| `Schematic.png` | Schematic |
+
+## Why I made it
+
+I want to make my own modular synth that is simple to build. Each module has these aims:
+
+- It operates from 9 V (and 12 V).
+- It is easy to build, with a minimum of components.
+- It uses an Arduino, to keep the parts count low and everything in tune.
+- It fits in any Eurorack case, and it can use normal Eurorack power.
+- It sounds good.
+
+As a standalone synth, Freaq is as good as most small synths that you can buy.
+
+![Freaq module](https://github.com/user-attachments/assets/2b71c2c9-46d3-4fc6-9805-e5f03454d055)
+
+## Credits
+
+- Synth design and code: [Meebleeps Freaq FM Synth](https://github.com/Meebleeps/MeeBleeps-Freaq-FM-Synth). Thank you, Meebleeps.
+- Audio library: [Mozzi](https://sensorium.github.io/Mozzi/).
+- PCB, front panel, Eurorack version and the Mozzi 2 update: Marcus ([lonesoulsurfer](https://github.com/lonesoulsurfer)).
+
+## Support
+
+Do you like this project? You can support my work on [GitHub Sponsors](https://github.com/sponsors/lonesoulsurfer).
+
+## Licence
+
+This project uses the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](LICENSE) (CC BY-NC-SA 4.0), the same licence as the Meebleeps original.
+
+- You can build, share and change this project.
+- You must name Meebleeps and lonesoulsurfer.
+- You must not use it for commercial purposes. For example, do not sell kits or built synths.
+- If you share a changed version, you must use the same licence.
